@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Boubaks | Signin</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <style>
+            body {
+                font-family: Lato, sans-serif !important;
+            }
+            .center {
+                position: relative;
+                top: 45%;
+                transform: translateY(-50%);
+            }
+            .title {
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+            img {
+                width: 200px;
+            }
+            h2 {
+                text-align: center;
+                margin: 0 0 1rem 0;
+                font-weight: 400;
+                color: #31174c;
+            }
+            .form {
+                width: 500px;
+                padding: 2rem;
+                margin: 0 auto;
+                border: solid 1px #31174c;
+            }
+            .input {
+                display: block;
+                width: 100%;
+                font-size: 1.1rem;
+                text-indent: 10px;
+                height: 3rem;
+                border: solid 1px #31174c;
+                border-radius: 4px;
+                margin-bottom: 1rem;
+            }
+            .submit {
+                display: block;
+                width: 100%;
+                font-size: 1.1rem;
+                height: 3rem;
+                background-color: #FF8838;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                margin-bottom: 1rem;
+            }
+            .submit:hover {
+                background-color: #E27933;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="center">
+            <div class="title">
+                <img src="/assets/logo.png" />
+            </div>
+            <div class="form">
+                <h2>Connectez-vous</h2>
+                <form action="/auth/local/login" method="POST">
+                    <input class="input" type="text" placeholder="Votre email" name="username" />
+                    <input class="input" type="password" placeholder="Votre password" name="password"/>
+                    <input class="submit" value="Connectez-vous" type="submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

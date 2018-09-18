@@ -1,0 +1,12 @@
+#dist
+dist
+
+# Logs
+logs
+log
+*.log
+app.log.*
+npm-debug.log*
+
+# Dependency directory
+node_modules
